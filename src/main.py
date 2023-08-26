@@ -5,7 +5,7 @@ from ProducerTopic.producer_kafka import ProducerKafka
 def consume_messages():
     consumer = KafkaConsumer(
         'build-person-python',
-        bootstrap_servers=['localhost:9092'],
+        bootstrap_servers=['10.0.0.4:9092'],
         auto_offset_reset='earliest',
         enable_auto_commit=True,
         group_id='build-person-data',

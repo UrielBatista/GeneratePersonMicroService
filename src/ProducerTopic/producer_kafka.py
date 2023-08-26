@@ -12,11 +12,11 @@ class ProducerKafka():
 
     def calling_producer(self, payload):
         p = Producer({
-            'bootstrap.servers': 'localhost:9092',
+            'bootstrap.servers': '10.0.0.4:9092',
         })
 
         sender_kafka_payload = {
-            'key': '11231511551',
+            'key': '160698',
             'value': payload
         }
 
